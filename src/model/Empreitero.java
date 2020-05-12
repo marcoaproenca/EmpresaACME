@@ -2,11 +2,12 @@ package model;
 
 public class Empreitero extends Funcionario {
 	
-	public float valorEmpreitada;
+	private float valorEmpreitada;
 
 	public Empreitero(String nome, int registro, float valorEmpreitada) {
 		super(nome, registro);
 		// TODO Auto-generated constructor stub
+		this.valorEmpreitada = valorEmpreitada;
 	}
 
 	@Override

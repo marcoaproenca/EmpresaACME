@@ -18,7 +18,11 @@ public class AppFolha {
 		folha.add(new Empreitero("Arthur", 0004, 25000.0f));
 		
 		for(Funcionario f : folha) {
-			System.out.println(f.calculaSalario());
+			System.out.println("Funcionario: "   + f.getRegistro()    + 
+					           "\nNome       : " + f.getNome()        +
+					           "\nSalário    : " + f.calculaSalario() +
+					           "\n----------------------------------------"
+					);
 		}
 	}
 

@@ -1,23 +1,26 @@
 package model;
 
 public class Chefe extends Funcionario {
-	public float salario;
-	public float adicionalFuncao;
-	public float beneficioTerno;
+	private float salario;
+	private float adicionalFuncao;
+	private float beneficioTerno;
 
 	public Chefe(String nome, int registro, float salario, float adicionalFuncao, float beneficioTerno) {
 		super(nome, registro);
 		// TODO Auto-generated constructor stub
+		this.salario         = salario;
+		this.adicionalFuncao = adicionalFuncao;
+		this.beneficioTerno  = beneficioTerno; 
 	}
 
 	@Override
 	public float calculaSalario() {
 		// TODO Auto-generated method stub
-		return this.salario += salario * (adicionalFuncao/100) + beneficioTerno;
+		return this.salario + (this.salario * this.adicionalFuncao/100) + this.beneficioTerno;
 	}
 
 	public float getSalario() {
-		return salario;
+		return this.salario;
 	}
 
 	public void setSalario(float salario) {

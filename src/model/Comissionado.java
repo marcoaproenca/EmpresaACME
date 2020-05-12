@@ -1,13 +1,14 @@
 package model;
 
 public class Comissionado extends Funcionario {
-	public float salario;
-	public float comissao;
-	public float beneficioTerno;
+	private float salario;
+	private float comissao;
 	
 	public Comissionado(String nome, int registro, float salario, float comissao) {
 		super(nome, registro);
 		// TODO Auto-generated constructor stub
+		this.salario  = salario;
+		this.comissao = comissao;
 	}
 	
 	@Override
@@ -32,18 +33,9 @@ public class Comissionado extends Funcionario {
 		this.comissao = comissao;
 	}
 
-	public float getBeneficioTerno() {
-		return beneficioTerno;
-	}
-
-	public void setBeneficioTerno(float beneficioTerno) {
-		this.beneficioTerno = beneficioTerno;
-	}
-
 	@Override
 	public String toString() {
-		return "Comissionado [salario=" + salario + ", comissao=" + comissao + ", beneficioTerno=" + beneficioTerno
-				+ ", nome=" + nome + ", registro=" + registro + "]";
+		return "Comissionado [salario=" + salario + ", comissao=" + comissao + ", nome=" + nome + ", registro=" + registro + "]";
 	}
 
 

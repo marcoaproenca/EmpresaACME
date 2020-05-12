@@ -2,13 +2,15 @@ package model;
 
 public class Horista extends Funcionario {
 	
-	public float valorHora;
-	public int   numeroHoras;
+	private float valorHora;
+	private int   numeroHoras;
 
 	
 	public Horista(String nome, int registro, float valorHora, int numeroHoras) {
 		super(nome, registro);
 		// TODO Auto-generated constructor stub
+		this.valorHora   = valorHora;
+		this.numeroHoras = numeroHoras;
 	}
 
 	@Override
